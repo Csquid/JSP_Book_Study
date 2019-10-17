@@ -6,7 +6,14 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4c91b93-396e-40c8-ad79-f406bcaaeef4" name="Default Changelist" comment="" />
+    <list default="true" id="c4c91b93-396e-40c8-ad79-f406bcaaeef4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/pack/unit05_login_form.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pack/unit06_radio_form.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pack/unit07_checkbox_form.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,6 +148,7 @@
       <updated>1571283945486</updated>
       <workItem from="1571283952103" duration="4400000" />
       <workItem from="1571288476615" duration="7938000" />
+      <workItem from="1571318956823" duration="3774000" />
     </task>
     <servers />
   </component>
