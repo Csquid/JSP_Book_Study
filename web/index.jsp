@@ -1,4 +1,4 @@
-<%--
+<%@ page import="java.io.IOException" %><%--
   Created by IntelliJ IDEA.
   User: KMCU
   Date: 2019-10-17
@@ -7,124 +7,77 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-  <head>
+<head>
     <title>$Title$</title>
-  </head>
-  <body>
-  * Servlet file 호출 * <br>
-  <!-- MyServlet -->
-  <a href="MyServlet">MyServlet 호출</a><br>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+    <style>
+        .monkey-dropdown {
+            display: inline;
+            margin-right: 10px;
+        }
 
-  <!-- unit01 -->
-  <a href="unit">unit 호출</a><br>
+        .row {
+            margin-left: 0px;
+        }
+    </style>
+</head>
+<body>
+<div style="margin-top: 30px; margin-left: 30px; padding: 20px;">
+    <h2 style="margin-top: 0px;">JSP&Servlet</h2>
+    <p style="COLOR: #007bff; margin-bottom: 8px;"><b>ただ 信じた 道を まっすぐに 進むだけさ</b></p>
+    <div class="row">
+        <div class="dropdown monkey-dropdown ">
+            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown">Chap01
+                <span class="caret"></span>
+            </button>
+            <div class="dropdown-menu">
+                <a href="chap01/unit01-01.jsp" class="dropdown-item">unit01</a>
+                <a href="chap01/unit01-02.jsp" class="dropdown-item">unit02</a>
+                <a href="chap01/unit01-03.jsp" class="dropdown-item">unit03</a>
+                <a href="chap01/unit01-04.jsp" class="dropdown-item">unit04</a>
+                <a href="chap01/unit01-05.jsp" class="dropdown-item">unit05</a>
+                <a href="chap01/unit01-06.jsp" class="dropdown-item">unit06</a>
+                <a href="chap01/unit01-07.jsp" class="dropdown-item">unit07</a>
+                <a href="chap01/unit01-08.jsp" class="dropdown-item">unit08</a>
+                <a href="chap01/unit01-project.jsp" class="dropdown-item">unit_project</a>
+            </div>
+        </div>
+        <div class="dropdown monkey-dropdown ">
+            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown">Chap02
+                <span class="caret"></span>
+            </button>
+            <div class="dropdown-menu">
+                <%!
+                    JspWriter out;
 
-  <!-- unit02_lifeCycle -->
-  <a href="lifeCycle">Life Cycle 호출</a><br><br>
+                    private String setNumber(int nNum) throws IOException {
+                        if (nNum >= 10 ? false : true) {
+                            //out.print('0' + nNum);
+                            return "0" + nNum;
+                        } else {
+                          return Integer.toString(nNum);
+                        }
+                    }
+                %>
+                <%
+                    for (int i = 1; i <= 10; i++) {
+                      out.println("<a href='chap02/unit02-" + setNumber(i) + ".jsp' class='dropdown-item'> unit" + setNumber(i) + "</a>");
+                    }
+                %>
+            </div>
+        </div>
+    </div>
 
-  <!-- unit03_form -->
-  <form method="get" action="unit03">
-    <input type="submit" value="get 방식으로 호출하기">
-  </form>
-  <form method="post" action="unit03">
-    <input type="submit" value="post 방식으로 호출하기">
-  </form>
-
-  <!-- unit04_param -->
-  <form method="get" action="unit04" name="frm">
-    <table>
-      <tr>
-        <td>ID: </td>
-        <td><input type="text" name="id"></td>
-      </tr>
-      <tr>
-        <td>나 &nbsp; 이: </td>
-        <td><input type="text" name="age"></td>
-      </tr>
-      <tr>
-        <td><input type="submit" value="전송"onclick="return check()"></td>
-      </tr>
-    </table>
-  </form>
-
-  <!-- unit05_login_form -->
-  <form method="get" action="unit05">
-    <label for="userid">ID : </label>
-    <input type="text" name="id" id="userid"> <br>
-
-    <label for="userpw">PW : </label>
-    <input type="password" name="pwd" id="userpw"> <br>
-    <input type="submit" value="login">
-  </form>
-
-  <!-- unit06_radio_form -->
-  <form action="unit06" method="get">
-    <label>gender: </label>
-    <input type="radio" id="man" name="gender" value="man" checked> man
-    <input type="radio" id="woman" name="gender" value="woman"> woman <br><br>
-
-    <label>Email: </label>
-    <input type="radio" id="yes" name="chk_mail" value="yes"> 수신
-    <input type="radio" id="no" name="chk_mail" value="no"> 거부 <br><br>
-
-    <label for="content"> 간단한 가입 인사를 적어주세요 ^o^ </label> <br>
-
-    <textarea id="content" name="content" rows="3" cols="35"></textarea> <br>
-    <input type="submit" value="submit">
-  </form>
-
-  <!-- unit07_checkbox_form -->
-  <form action="unit07" method="get">
-    <input type="checkbox" name="item" value="신발">신발
-    <input type="checkbox" name="item" value="가방">가방
-    <input type="checkbox" name="item" value="벨트">벨트 <br>
-    <input type="checkbox" name="item" value="모자">모자
-    <input type="checkbox" name="item" value="시계">시계
-    <input type="checkbox" name="item" value="쥬얼리">쥬얼리 <br>
-    <input type="submit" value="submit">
-  </form>
-
-  <form action="unit08" method="get">
-        <span style="float: left; margin-right: 20px;">
-            <label for="job">직업</label>
-            <select name="job" id="job" size="1">
-                <option value="">select</option>
-                <option value="student">student</option>
-                <option value="computer">computer</option>
-                <option value="service">service</option>
-                <option value="press">press</option>
-                <option value="soldier">soldier</option>
-                <option value="education">education</option>
-            </select>
-        </span>
-
-    <label for="interest" style="float: left;">관심 분야</label>
-    <select name="interest" id="interest" size='5' multiple="multiple">
-      <option value="espresso">espresso</option>
-      <option value="roastion">roastion</option>
-      <option value="green_beans">green_beans</option>
-      <option value="beans">beans</option>
-      <option value="hand_drip">hand_drip</option>
-    </select>
-    <br><br>
-    <input type="submit" value="submit" style="float:left; margin-right: 50px">
-  </form>
-
-  <script>
-    function check() {
-      if(document.frm.id.value === "") {
-        alert("아이디를 입력해주세요.");
-        document.frm.id.focus();
-        return false;
-      } else if(document.frm.age.value === "") {
-        alert("나이를 입력해주세요.");
-        document.frm.age.focus();
-        return false;
-      } else if(isNaN(document.frm.age.value)) {
-        alert("숫자를 적어주세요.");
-        document.frm.age.focus();
-        return false;
-      }
-    }
-  </script>
-  </body>
+</div>
+</body>
 </html>

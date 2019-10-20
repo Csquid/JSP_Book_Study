@@ -7,8 +7,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c4c91b93-396e-40c8-ad79-f406bcaaeef4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pack/unit08_select_form.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pack/unit_join.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/chap01/unit01-01.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/chap01/unit01-02.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/chap01/unit01-03.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/chap01/unit01-04.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/chap01/unit01-05.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/chap01/unit01-06.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/chap01/unit01-07.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/chap01/unit01-08.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/chap01/unit01-project.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/chap02/unit02-01.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/chap02/unit02-02.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/chap02/unit02-03.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/chap02/unit02-04.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/chap02/unit02-05.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/chap02/unit02-06.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/chap02/unit02-07.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pack/unit01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pack/chap01/unit01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pack/unit02_lifeCycle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pack/chap01/unit02_lifeCycle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pack/unit03_form.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pack/chap01/unit03_form.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pack/unit04_param.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pack/chap01/unit04_param.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pack/unit05_login_form.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pack/chap01/unit05_login_form.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pack/unit06_radio_form.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pack/chap01/unit06_radio_form.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pack/unit07_checkbox_form.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pack/chap01/unit07_checkbox_form.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pack/unit08_select_form.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pack/chap01/unit08_select_form.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,12 +63,18 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Git\Document\JSP\web\chap01" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -60,12 +90,12 @@
   </component>
   <component name="RunManager">
     <configuration name="Tomcat 9.0.26" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.26" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/jsp-study/" />
       <option name="COMMON_VM_ARGUMENTS" value="-Duser.language=en -Duser.region=US" />
       <deployment>
         <artifact name="JSP_Book_Study:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/JSP_Book_Study_war_exploded" />
+            <option name="CONTEXT_PATH" value="/jsp-study" />
           </settings>
         </artifact>
       </deployment>
@@ -148,6 +178,11 @@
       <workItem from="1571318956823" duration="4409000" />
       <workItem from="1571389946459" duration="80000" />
       <workItem from="1571409108675" duration="3950000" />
+      <workItem from="1571466086415" duration="3154000" />
+      <workItem from="1571477952819" duration="642000" />
+      <workItem from="1571479016883" duration="5503000" />
+      <workItem from="1571489062555" duration="836000" />
+      <workItem from="1571532621246" duration="25473000" />
     </task>
     <servers />
   </component>

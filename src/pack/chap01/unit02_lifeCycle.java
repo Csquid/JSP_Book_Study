@@ -1,4 +1,4 @@
-package pack;
+package pack.chap01;
 
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;

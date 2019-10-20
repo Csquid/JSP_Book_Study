@@ -1,4 +1,4 @@
-package pack;
+package pack.chap01;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -10,7 +10,7 @@ import java.io.PrintWriter;
 
 @WebServlet(name = "unit07", value="/unit07")
 public class unit07_checkbox_form extends HttpServlet {
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html; charset=UTF-8");
 
         PrintWriter out = response.getWriter();
