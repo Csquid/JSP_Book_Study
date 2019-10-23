@@ -70,10 +70,11 @@
                     }
                 %>
                 <%
-                    for (int i = 1; i <= 10; i++) {
+                    for (int i = 1; i <= 7; i++) {
                       out.println("<a href='chap02/unit02-" + setNumber(i) + ".jsp' class='dropdown-item'> unit" + setNumber(i) + "</a>");
                     }
                 %>
+                <a href="chap02/unit02-08-main.jsp" class="dropdown-item">unit08</a>
             </div>
         </div>
     </div>

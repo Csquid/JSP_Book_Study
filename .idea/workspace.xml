@@ -73,6 +73,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -187,6 +188,9 @@
       <workItem from="1571532621246" duration="25473000" />
       <workItem from="1571701364480" duration="151000" />
       <workItem from="1571701529311" duration="1086000" />
+      <workItem from="1571794198171" duration="183000" />
+      <workItem from="1571794405155" duration="256000" />
+      <workItem from="1571794686183" duration="2802000" />
     </task>
     <servers />
   </component>

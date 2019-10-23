@@ -12,7 +12,7 @@
 </head>
 <body>
     <h3>프론트 페이지</h3>
-    <a href="unit02-08-3.jsp">서브 페이지로 이동하기</a> <br>
-    <%@include file="unit02-08-1.jsp" %>
+    <a href="unit02-08-sub.jsp">서브 페이지로 이동하기</a> <br>
+    <%@include file="unit02-08-footer.jsp" %>
 </body>
 </html>
